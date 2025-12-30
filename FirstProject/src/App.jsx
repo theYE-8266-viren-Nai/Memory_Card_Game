@@ -68,6 +68,7 @@ const App = () => {
             }
           })
           setCards(flippedBackCard)
+          setFlippedCards([])
         }, 1000);
       }
     }
