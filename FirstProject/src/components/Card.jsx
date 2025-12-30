@@ -3,7 +3,7 @@ import React from 'react'
 export const Card = ({card, onClick}) => {
   return (
     <div 
-      className={`card ${card.isFlipped ? "flipped" : ""}`}  // ← FIXED SYNTAX
+      className={`card ${card.isFlipped ? "flipped" : ""}`}  
       onClick={() => onClick(card)} 
     >
       <div className="card-front">
