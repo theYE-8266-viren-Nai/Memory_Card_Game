@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GameHeader = ({Score,Move}) => {
+const GameHeader = ({ Score, Move , onReset }) => {
     return (
         <>
             <div className="game-header">
@@ -15,6 +15,8 @@ const GameHeader = ({Score,Move}) => {
                         <span className="stat-label">{Move}</span>
                     </div>
                 </div>
+                <button className='reset-btn' onClick={onReset}>New Game</button>
+
             </div>
         </>
     )
